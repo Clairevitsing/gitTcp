@@ -12,3 +12,12 @@ function registerUser() {
   alert("Formulaire d'inscription ouvert!");
   console.log("Processus d'inscription initié.");
 }
+
+document.getElementById("themeToggle").addEventListener("click", function () {
+  var themeOptions = document.getElementById("themeOptions");
+  if (themeOptions.style.display === "none") {
+    themeOptions.style.display = "block";
+  } else {
+    themeOptions.style.display = "none";
+  }
+});
